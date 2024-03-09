@@ -100,14 +100,18 @@ body {
 
 .pizzas {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 4.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .pizza {
   display: flex;
   gap: 3.2rem;
+  width: 300px;
+  max-width: 90%;
 }
 
 .pizza img {
@@ -176,4 +180,12 @@ body {
 
 .btn:hover {
   background-color: #e9bb24;
+}
+
+@media only screen and (max-width: 850px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  
+  
 }
